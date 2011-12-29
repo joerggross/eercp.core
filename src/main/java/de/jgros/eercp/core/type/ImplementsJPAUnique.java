@@ -8,11 +8,11 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import de.jgros.eercp.core.aspect.UniqueAspect;
+import de.jgros.eercp.core.aspect.JPAUniqueAspect;
 
 /**
  * Annotation that signals the implementation of the {@link IUnique} interface
- * by the {@link UniqueAspect}.
+ * by the {@link JPAUniqueAspect}.
  * <p>
  * 
  * @author Jörg Groß

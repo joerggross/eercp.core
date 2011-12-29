@@ -4,6 +4,8 @@
 package de.jgros.eercp.core.type;
 
 /**
+ * Abstract base class for implementations of {@link IUnique}.
+ * 
  * @author Jörg Groß
  * 
  */

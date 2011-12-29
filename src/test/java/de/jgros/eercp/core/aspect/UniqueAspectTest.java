@@ -18,11 +18,10 @@ import org.junit.Test;
 public class UniqueAspectTest {
 
 	/**
-	 * Tests the getter and setter of the unique aspect by simple class
-	 * extension.
+	 * Tests the unique implementation by simple class extension.
 	 */
 	@Test
-	public void testSetGetByInterfaceImplementation() throws Exception {
+	public void testUniqueByExtensionOfImplementation() throws Exception {
 
 		UniqueEntityExtendsUnique ue = new UniqueEntityExtendsUnique();
 		ue.setUniqueId("AAA");
@@ -43,11 +42,10 @@ public class UniqueAspectTest {
 	}
 
 	/**
-	 * Tests the getter and setter of the unique aspect by annotation
-	 * implementation.
+	 * Tests the unique implementation by annotation implementation.
 	 */
 	@Test
-	public void testSetGetByAnnotation() throws Exception {
+	public void testUniqueByAnnotation() throws Exception {
 
 		UniqueEntityByAnnotation ue = new UniqueEntityByAnnotation();
 		ue.setUniqueId("AAA");
@@ -67,11 +65,11 @@ public class UniqueAspectTest {
 	}
 
 	/**
-	 * Tests the getter and setter of the unique aspect by annotation
-	 * implementation and getter override.
+	 * Tests the unique aspect by annotation implementation and override of
+	 * methods.
 	 */
 	@Test
-	public void testSetGetByAnnotationOverride() throws Exception {
+	public void testUniqueByAnnotationOverride() throws Exception {
 
 		UniqueEntityByAnnotationOverride ue = new UniqueEntityByAnnotationOverride();
 		ue.setUniqueId("AAA");

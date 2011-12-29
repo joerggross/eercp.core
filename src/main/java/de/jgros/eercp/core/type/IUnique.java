@@ -8,6 +8,7 @@ package de.jgros.eercp.core.type;
  * "domain wide" means that each domain instance must have its own unique id not
  * only for instances of its own class but also for all instances in the domain.
  * 
+ * 
  * @author Jörg Groß
  */
 public interface IUnique {
