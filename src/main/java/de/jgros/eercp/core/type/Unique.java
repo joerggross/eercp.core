@@ -19,7 +19,7 @@ public class Unique extends AbstractUnique {
 	 * {@inheritDoc}
 	 */
 	@Override
-	public String getUniqueId() {
+	public final String getUniqueId() {
 		return this.uniqueId;
 	}
 

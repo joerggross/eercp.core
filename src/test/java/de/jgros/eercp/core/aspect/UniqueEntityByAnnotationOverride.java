@@ -15,13 +15,12 @@ import de.jgros.eercp.core.type.ImplementsJPAUnique;
 public class UniqueEntityByAnnotationOverride {
 
 	/**
-	 * Override aspect implementation.
+	 * Sets the unique id and adds an 'A' at the end of the given string.
 	 * 
 	 * @{inheritDoc
 	 */
-	@Override
-	public String getUniqueId() {
-		return "BBB";
+	public void setUniqueId(String aUniqueId) {
+		super.setUniqueId(aUniqueId + "A");
 	}
 
 	/**

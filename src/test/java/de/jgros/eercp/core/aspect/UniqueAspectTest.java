@@ -75,7 +75,7 @@ public class UniqueAspectTest {
 
 		UniqueEntityByAnnotationOverride ue = new UniqueEntityByAnnotationOverride();
 		ue.setUniqueId("AAA");
-		Assert.assertEquals("BBB", ue.getUniqueId());
+		Assert.assertEquals("AAAA", ue.getUniqueId());
 
 		Assert.assertTrue(ue.getClass().getSuperclass()
 				.getDeclaredField("uniqueId").isAnnotationPresent(Id.class));
@@ -87,9 +87,8 @@ public class UniqueAspectTest {
 
 		// test not same
 		ue2.setUniqueId("AAB");
-		Assert.assertEquals("BBB", ue2.getUniqueId());
+		Assert.assertEquals("AABA", ue2.getUniqueId());
 
-		// we don't expect this
 		Assert.assertNotSame(ue, ue2);
 
 		Assert.assertEquals("BBB".hashCode(), ue2.hashCode());
