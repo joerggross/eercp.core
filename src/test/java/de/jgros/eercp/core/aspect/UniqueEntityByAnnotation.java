@@ -14,4 +14,6 @@ import de.jgros.eercp.core.type.ImplementsUnique;
 @ImplementsUnique
 public class UniqueEntityByAnnotation {
 
+	String name;
+
 }
