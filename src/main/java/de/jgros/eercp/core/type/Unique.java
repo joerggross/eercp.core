@@ -1,12 +1,12 @@
 /**
- * Copyright by Jörg Groß.
+ * Copyright by Joerg Gross.
  */
 package de.jgros.eercp.core.type;
 
 /**
  * Implementation of simple uniqueness.
  * 
- * @author Jörg Groß
+ * @author Joerg Gross
  * 
  */
 public class Unique extends AbstractUnique {
